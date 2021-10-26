@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDaoJDBCImpl implements UserDao {
-    private static final String SAVE = "INSERT INTO users(name, lastName, age) VALUES(?, ?, ?)";
-    private static final String REMOVE = "DELETE FROM users WHERE id = ?";
-    private static final String GET = "SELECT * FROM users";
-    private static final String CREATE = "CREATE TABLE users (id BIGINT NOT NULL AUTO_INCREMENT, name VARCHAR(99) NOT NULL, lastName VARCHAR(99) NOT NULL, age TINYINT NOT NULL, PRIMARY KEY (id))";
-    private static final String DROP = "DROP TABLE users";
-    private static final String CLEAN = "DELETE FROM users";
+    private static final String SAVE = "INSERT INTO User(name, lastName, age) VALUES(?, ?, ?)";
+    private static final String REMOVE = "DELETE FROM User WHERE id = ?";
+    private static final String GET = "SELECT * FROM User";
+    private static final String CREATE = "CREATE TABLE User (id BIGINT NOT NULL AUTO_INCREMENT, name VARCHAR(99) NOT NULL, lastName VARCHAR(99) NOT NULL, age TINYINT NOT NULL, PRIMARY KEY (id))";
+    private static final String DROP = "DROP TABLE User";
+    private static final String CLEAN = "DELETE FROM User";
 
     public UserDaoJDBCImpl() {
 
