@@ -19,6 +19,7 @@ public class Main {
         dao.saveUser("Freddy", "Krueger", (byte) 45);
         users = dao.getAllUsers();
         users.forEach(System.out::println);
+        dao.removeUserById(1);
         dao.cleanUsersTable();
         dao.dropUsersTable();
     }
